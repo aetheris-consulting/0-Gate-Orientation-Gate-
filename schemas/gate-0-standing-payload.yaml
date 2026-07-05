@@ -1,0 +1,155 @@
+gate_0_standing_payload:
+  gate_0_decision:
+    decision: "pass_to_gate_1 | pass_with_declared_unknowns | request_context | escalate | block | quarantine"
+    reason: ""
+    next_gate: "gate_1_target_work_definition"
+
+  g0_universal_orientation:
+    request_summary: ""
+    actor: ""
+    user_intent: ""
+    desired_output: ""
+    known_context: []
+    unknown_context: []
+    initial_risk: "low | medium | high | unknown"
+    initial_locus: "internal | external | mixed | unknown"
+
+  implementation_track_orientation:
+    selected_track: "optimization | production_manufacturing | scientific_discovery | medical_healthcare | education_human_capability | multi_track | unknown"
+    primary_track: ""
+    secondary_tracks: []
+    default_gate_0_depth: "single | conditional | multiple"
+    required_orientation_islands: []
+    escalation_triggers: []
+
+  industry_classification_orientation:
+    classification_branch: "US_NAICS | international_ISIC | region_specific | multi_region | unknown"
+    industry_group: ""
+    sector: ""
+    subsector_or_division: ""
+    industry_group_detail: ""
+    classification_confidence: "low | medium | high"
+    likely_regulators_or_standards: []
+    likely_data_classes: []
+    likely_risk_domains: []
+
+  compliance_shell:
+    jurisdiction:
+      country_or_region: ""
+      state_or_local: ""
+      multi_region: false
+    legal_regulatory:
+      statutes: []
+      regulations: []
+      regulators: []
+      reporting_obligations: []
+    privacy_data:
+      personal_data: false
+      sensitive_data: false
+      health_data: false
+      financial_data: false
+      student_data: false
+      classified_or_export_controlled_data: false
+      retention_or_deletion_rules: []
+    authority_professional_duty:
+      licensed_professional_required: false
+      human_review_required: false
+      fiduciary_duty_possible: false
+      standard_of_care_possible: false
+      institutional_approval_required: false
+    safety_liability:
+      physical_harm_possible: false
+      clinical_harm_possible: false
+      product_defect_possible: false
+      workplace_safety_possible: false
+      public_safety_possible: false
+      environmental_harm_possible: false
+    audit_provenance:
+      source_traceability_required: false
+      decision_log_required: false
+      approval_record_required: false
+      rollback_path_required: false
+    forbidden_actions: []
+    required_controls: []
+    escalation_conditions: []
+
+  final_industry_orientation:
+    implementation_track: ""
+    industry_group: ""
+    jurisdiction_shell: ""
+    compliance_shells_loaded: []
+    industry_operating_shell: ""
+    risk_escalators: []
+    required_orientation_islands_for_next_layer: []
+    forbidden_actions: []
+    human_review_requirements: []
+    audit_requirements: []
+
+  business_type_orientation:
+    business_type: "manufacturing | merchandising | service | hybrid | unknown"
+    primary_value_flow: ""
+    secondary_value_flows: []
+    operational_objects: []
+    customer_touchpoints: []
+    fulfillment_model: ""
+    quality_model: ""
+    business_type_risks: []
+    additional_orientation_islands: []
+
+  locus_boundary_orientation:
+    boundary_level: "L0_internal_cognitive | L1_internal_controlled_system | L2_external_side_effect | L3_external_dependency | L4_federated_multi_system"
+    user_to_ai_relation: ""
+    ai_to_system_relation: ""
+    ai_to_external_party_relation: ""
+    connectors_or_agents: []
+    third_parties: []
+    external_dependencies: []
+    authority_boundary: ""
+    data_boundary: ""
+    system_boundary: ""
+
+  completion_horizon_orientation:
+    requested_outcome: ""
+    controllable_scope: []
+    non_controllable_scope: []
+    executable_actions:
+      - action: ""
+        controlled_by_ai: false
+        requires_connector: false
+        requires_user_approval: false
+        can_verify_completion: false
+    external_dependencies:
+      - dependency: ""
+        actor_or_system: ""
+        required_response: ""
+        ai_can_force_response: false
+        ai_can_monitor_response: false
+        expected_state: "pending | received | failed | unknown"
+    completion_state_possible:
+      full_completion_now: false
+      partial_completion_only: false
+      initiation_only: false
+      waiting_state_required: false
+    truthful_user_report:
+      allowed_to_say: []
+      not_allowed_to_say: []
+
+  gate_0_work_bridge:
+    target_work_object: ""
+    work_object_type: "informational | analytical | operational | external_action | coordination | high_risk | unknown"
+    governing_context:
+      implementation_track: ""
+      industry_group: ""
+      jurisdiction_shell: ""
+      compliance_shells: []
+      business_type: ""
+      boundary_level: ""
+      completion_horizon: ""
+    allowed_actions: []
+    forbidden_actions: []
+    required_human_review: false
+    required_clinician_or_professional_review: false
+    required_audit: false
+    assumptions: []
+    declared_unknowns: []
+    open_dependencies: []
